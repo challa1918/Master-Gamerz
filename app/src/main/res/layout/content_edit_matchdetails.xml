@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".FinalMatchDetails"
+    tools:showIn="@layout/activity_edit_matchdetails">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="200dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editmid"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+
+            android:hint="Match Id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:enabled="false"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:id="@+id/editfee"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="3dp"
+            android:hint="Entry Fee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:id="@+id/editperkill"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="3dp"
+            android:hint="Per Kill"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editfprize"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="244dp"
+            android:layout_marginEnd="3dp"
+
+            android:hint="First Prize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/editspinner"
+
+            android:layout_width="247dp"
+            android:layout_height="55dp"
+
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:layout_marginTop="332dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="820dp"
+            android:text="Type :"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="344dp"
+            android:text="Map :"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="820dp"
+            android:text="Version :"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.651"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/editdateview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="508dp"
+            android:text="Date "
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.682"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/edittimeview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="684dp"
+            android:text="Time "
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView7"
+            android:layout_width="198dp"
+            android:layout_height="173dp"
+            android:layout_marginTop="416dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.071"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="calendarmatch.json">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView6"
+            android:layout_width="101dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="624dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="clockmatch.json"
+            app:lottie_loop="true">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <RadioGroup
+            android:id="@+id/edittype"
+            android:layout_width="130dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <RadioButton
+                android:id="@+id/editsolo"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+
+                android:paddingBottom="4dp"
+                android:text="     SOLO">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/editduo"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+
+                android:text="     DUO">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/editsquad"
+                android:layout_width="match_parent"
+
+                android:layout_height="29dp"
+
+                android:text="     SQUAD">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/editversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="224dp"
+
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+            <RadioButton
+                android:id="@+id/edittpp"
+                android:layout_width="146dp"
+                android:layout_height="34dp"
+
+                android:text="        TPP">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/editfpp"
+                android:layout_width="147dp"
+                android:layout_height="31dp"
+
+                android:text="        FPP">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/editcreate"
+            android:layout_width="134dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="1060dp"
+
+            android:gravity="center"
+            android:text="Update"
+            android:textAlignment="gravity"
+            android:textStyle="bold"
+            app:backgroundTint="#0B0900"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Button>
+
+        <Button
+            android:id="@+id/editcalendar"
+            android:layout_width="179dp"
+            android:layout_height="177dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/textView17"
+            app:layout_constraintHorizontal_bias="0.255"
+            app:layout_constraintStart_toStartOf="@+id/lottieAnimationView7"
+            app:layout_constraintTop_toTopOf="@+id/lottieAnimationView7" />
+
+        <Button
+            android:id="@+id/edittime"
+            android:layout_width="96dp"
+            android:layout_height="104dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView6"
+            app:layout_constraintEnd_toEndOf="@+id/lottieAnimationView6"
+            app:layout_constraintStart_toStartOf="@+id/lottieAnimationView6"
+            app:layout_constraintTop_toTopOf="@+id/lottieAnimationView6" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

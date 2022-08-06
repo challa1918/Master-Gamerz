@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque"
+    android:paddingLeft="400dp"
+    android:paddingRight="400dp">
+    <!-- The background color, preferably the same as your normal theme -->
+    <!-- Your product logo - 144dp color version of your app icon -->
+    <item android:drawable="@android:color/white"/>
+    <item
+        android:drawable="@drawable/apppng"
+        android:width="400dp"
+        android:height="400dp"
+        android:gravity="center">
+
+    </item>>
+
+</layer-list>

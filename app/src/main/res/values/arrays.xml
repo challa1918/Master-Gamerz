@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets_array">
+        <item>""</item>
+        <item>"                    "Erangle</item>
+        <item>"                    "Sanhok</item>
+        <item>"                    "Vikendi</item>
+        <item>"                    "Miramar</item>
+        <item>"                    "Arcade</item>
+        <item>"                    "TDM</item>
+         </string-array>
+</resources>

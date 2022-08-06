@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rhloading"
+        android:layout_width="150dp"
+        android:layout_height="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loading.json"
+        app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
+
+
+
+        <TextView
+            android:id="@+id/redtotal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+android:background="@android:color/holo_blue_light"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/historylist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/redeemhistorynodatafound"
+        android:layout_width="380dp"
+        android:layout_height="274dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/historylist"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="redeemlistnodata.json"
+                app:lottie_loop="true">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

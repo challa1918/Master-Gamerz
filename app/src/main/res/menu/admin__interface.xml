@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/report"
+        android:orderInCategory="100"
+        android:title="Report"
+        android:icon="@drawable/finalreport"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:title="Share"
+
+        android:icon="@drawable/share"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/changephnno"
+        android:orderInCategory="100"
+        android:title="Update Details"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="@string/logout"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1E0000"
+        android:backgroundTint="#221F1F"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#FFFFFF">
+
+    </RatingBar>
+
+</com.google.android.material.card.MaterialCardView>

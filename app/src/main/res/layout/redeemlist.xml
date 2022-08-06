@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rloading"
+        android:layout_width="150dp"
+        android:layout_height="128dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="292dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loading.json"
+        app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/redeemlistnodata"
+        android:layout_width="231dp"
+        android:layout_height="226dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="redeemlistnodata.json"
+        app:lottie_loop="true">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reqlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light">
+
+            <ImageView
+                android:id="@+id/payimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="90dp"
+
+
+                android:src="@drawable/pp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/reqpay"
+                android:layout_width="wrap_content"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:text="Pay"
+                android:textColor="@android:color/white"
+
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="1dp"
+
+                android:layout_marginEnd="1dp"
+                android:src="@drawable/swipearrows"
+                android:tint="@android:color/white">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/reqdelete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+
+                android:id="@+id/deletimg"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:src="@drawable/delt">
+
+            </ImageView>
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/listnodatafound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No More Requests"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703">
+
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

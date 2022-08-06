@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        app:strokeColor="@android:color/transparent"
+        app:strokeWidth="3dp"
+android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:elevation="2dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="394dp"
+            android:layout_height="186dp"
+
+            android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:id="@+id/userprofile"
+                    android:layout_width="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/backgroundthemeuserdetails"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.003"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.058">
+
+                </ImageView>
+
+
+            <ImageView
+                android:id="@+id/adminid"
+                android:layout_width="33dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="88dp"
+                android:src="@drawable/id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.349"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/gmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.338"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/userid"
+                android:layout_width="177dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="88dp"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/adminid"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/usermail"
+                android:layout_width="198dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="48dp"
+
+
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/userdisname"
+                android:layout_width="200dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="7dp"
+
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/usermail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.716"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <Switch
+                android:id="@+id/userblock"
+                android:layout_width="83dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:switchMinWidth="25dp"
+                android:text="Block"
+                android:layout_marginStart="230dp"
+                android:textColor="#E31414"
+                android:textColorHint="#F4511E"
+                android:textOff="Block"
+                android:textOn="Blocked"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userid"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <LinearLayout
+                        android:id="@+id/scoreviewer"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:orientation="vertical"
+                android:layout_marginStart="100dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.095"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.938">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+
+                                android:text="Matches"
+                                android:textColor="@android:color/black"
+                                android:textSize="9sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+
+                                android:gravity="center"
+                                android:text=" Kills"
+                                android:textColor="@android:color/black"
+                                android:textSize="9sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Wins"
+                                android:textColor="@android:color/black"
+                                android:textSize="9sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/matchesplayed"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@android:color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/kills"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@android:color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/wins"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@android:color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

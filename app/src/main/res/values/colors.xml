@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#040009</color>
+    <color name="colorPrimaryDark">#04000C</color>
+    <color name="colorAccent">#FB8C00</color>
+    <color name="fullempty">#69BA13</color>
+    <color name="halfFilled">#FDD835</color>
+    <color name="AboutToFull">#F30D08</color>
+    <color name="check">#FAFAFB</color>
+</resources>

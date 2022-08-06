@@ -1,0 +1,38 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+
+    <style name="splash" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/mydrawable</item>
+    </style>
+
+    <item name="secondprogress" type="color">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+                <gradient android:angle="270" android:centerColor="#80ffb600" android:centerY="0.75" android:endColor="#a0ffcb00" android:startColor="#80ffd300" />
+            </shape>
+        </clip>
+    </item>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

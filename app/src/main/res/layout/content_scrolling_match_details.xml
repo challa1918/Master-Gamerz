@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:backgroundTint="@android:color/black"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingMatchDetails"
+    tools:showIn="@layout/activity_scrolling_match_details">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@android:color/black">
+
+        <ProgressBar
+            android:id="@+id/countprogress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="270dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FBC02D"
+            android:progressDrawable="@drawable/progressbardesign"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.191"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toEndOf="@+id/countprogress"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/countprogress"
+            app:layout_constraintVertical_bias="0.0"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:id="@+id/match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:clickable="true"
+
+                android:elevation="3dp"
+                android:text=" Match Details "
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView6"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="90dp"
+            android:clickable="true"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/countprogress"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:id="@+id/fprize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:clickable="true"
+
+                android:elevation="3dp"
+                android:text="1st Prize "
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView5"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="90dp"
+            android:clickable="true"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView6"
+            app:layout_constraintTop_toTopOf="@+id/countprogress"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:id="@+id/perkill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:clickable="true"
+
+                android:elevation="3dp"
+                android:text=" PerKill"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView4"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="90dp"
+            android:clickable="true"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView5"
+            app:layout_constraintTop_toTopOf="@+id/countprogress"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:id="@+id/fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:clickable="true"
+
+                android:elevation="3dp"
+                android:text="Entry Fee"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView7"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/colorAccent"
+            android:clickable="true"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="20dp"
+            android:layout_marginStart="31dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView9"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView4"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="2dp">
+
+
+            <TextView
+                android:id="@+id/disperkill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:clickable="true"
+
+                android:elevation="3dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView9"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/colorAccent"
+            android:clickable="true"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="20dp"
+            android:layout_marginStart="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView4"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:id="@+id/disfprize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:clickable="true"
+                android:elevation="3dp"
+
+                android:gravity="center"
+                android:text=" 0"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView8"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="31dp"
+            android:backgroundTint="@color/colorAccent"
+            android:clickable="true"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView7"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView4"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:id="@+id/disfee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:clickable="true"
+
+                android:elevation="3dp"
+                android:gravity="center"
+                android:text=" 0"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="185dp"
+            android:layout_marginEnd="48dp"
+            android:text="@string/note"
+            android:textAlignment="textStart"
+
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/countprogress"
+            tools:ignore="UnknownId" />
+
+        <include
+            android:id="@+id/myprogressbutton"
+            layout="@layout/progressbutton"
+            android:layout_width="298dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/noplayersjoined"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notice"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/joinedplayersview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="320dp"
+
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

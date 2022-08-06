@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "640916227160",
+    "firebase_url": "https://mastersrgamerz.firebaseio.com",
+    "project_id": "mastersrgamerz",
+    "storage_bucket": "mastersrgamerz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640916227160:android:7ba944866737de1fddb62d",
+        "android_client_info": {
+          "package_name": "com.example.mastersrgamerz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640916227160-qlsg2immr4a5vivkl00oi5etlokv0135.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZH_u_pNpLP8bECOdF761ceUodp57uoEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640916227160-qlsg2immr4a5vivkl00oi5etlokv0135.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

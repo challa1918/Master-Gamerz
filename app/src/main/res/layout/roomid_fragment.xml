@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background">
+
+    <Spinner
+        android:id="@+id/rmid"
+        style="@style/Widget.AppCompat.Spinner.DropDown"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:popupElevation="10dp"
+        android:prompt="@string/app_name"
+        android:spinnerMode="dropdown"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText">
+
+    </Spinner>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/roomid"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/room_id"
+        android:textColorHint="#171501"
+        app:boxStrokeColor="#131201"
+        app:hintTextColor="#191601"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rmid"
+        app:layout_constraintVertical_bias="0.025">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="50dp"
+        android:hint="Password"
+        android:textColorHint="#151301"
+        app:boxStrokeColor="#1B1801"
+        android:layout_marginTop="30dp"
+        app:hintTextColor="#151301"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roomid"
+        app:layout_constraintVertical_bias="0.023">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/rupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+android:layout_marginTop="60dp"
+        android:text="Update"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

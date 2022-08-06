@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/check"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="20dp"
+        app:strokeColor="@android:color/holo_red_dark"
+        app:strokeWidth="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+            android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Do you want to send an InApp message ?"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/inappmessage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/msgyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:background="@android:color/transparent"
+                    android:text="Yes"
+                    android:layout_marginStart="2dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/msgno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:background="@android:color/transparent"
+                    android:text="No"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </RadioButton>
+
+            </RadioGroup>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/title"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="3dp"
+        android:hint="Title"
+        android:textColorHint="#0B0A00"
+        app:boxStrokeColor="#100E01"
+        android:layout_marginTop="30dp"
+        app:hintTextColor="#121001"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#130101"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/body"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="3dp"
+        android:hint="Body"
+        android:layout_marginTop="40dp"
+
+        android:textColorHint="#151301"
+        app:boxStrokeColor="#171501"
+        app:hintTextColor="#1C1A01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#100101"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/msend"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Send Notification"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/body" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
